@@ -1,0 +1,31 @@
+#include<stdio.h>
+main()
+{
+	//Display food item list
+	printf("No. Food Item List      Price \n\n 1. French Fries        Rs.  99 \n 2. Pasta               Rs. 179 \n 3. Sandwich            Rs. 149 \n 4. Pizza               Rs. 239 \n 5. Burger              Rs. 129");
+	int Food_Item_Number;
+	printf("\n\nPlease Enter Food Item Number To Place Order ");
+	scanf("%d",&Food_Item_Number);
+	switch(Food_Item_Number)
+	{
+		case 1:
+			printf("Your Choice : French Fries \nPrice       : Rs. 99");
+			break;
+		case 2:
+			printf("Your Choice : Pasta \nPrice       : Rs. 179");
+			break;
+		case 3:
+			printf("Your Choice : Sandwich \nPrice       : Rs. 149");
+			break;
+		case 4:
+			printf("Your Choice : Pizza \nPrice       : Rs. 239");
+			break;
+		case 5:
+			printf("Your Choice : Burger \nPrice       : Rs. 129");
+			break;
+		default :
+			printf("Please enter a valid number");
+	}
+	printf("\n\nThank You For Ordering:) \nPlease Wait For Sometime.");
+	return 0;
+}
